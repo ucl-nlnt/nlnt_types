@@ -1,12 +1,12 @@
 from setuptools import setup
 
 setup(
-    name='nlnt_networking',
+    name='nlnt_types',
     version='0.0.1',
-    description='private package for networking in UCL NLNT',
+    description='Custom static types for NLNT codebase',
     url='https://github.com/ucl-nlnt/nlnt_types',
     author='ucl-nlnt',
     license='unlicense',
-    packages=['nlnt_networking'],
+    packages=['nlnt_types'],
     zip_safe=False
 )
