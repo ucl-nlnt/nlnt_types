@@ -20,6 +20,7 @@ class LaserscanFrame(TypedDict):
 class TwistFrame(TypedDict):
     linear: FloatList
     angular: FloatList
+    time: Optional[float]
 
 
 class IMUFrame(TypedDict):
@@ -60,6 +61,10 @@ StatesList = List[Union[DataframeType]]
 
 class KeyframeType(TypedDict):
     natural_language_prompt: str
+    start_timestamp_s: str
+    start_timestamp_float: float
+    end_timestamp_s: str
+    end_timestamp_float: float
     step_num: int
     states: StatesList
 
