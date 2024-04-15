@@ -1,4 +1,4 @@
-from typing import TypedDict, List, Union
+from typing import TypedDict, List, Union, Optional
 
 
 FloatList = List[Union[float]]
@@ -47,7 +47,7 @@ class BatteryFrame(TypedDict):
 
 
 class DataframeType(TypedDict):
-    laser_scan: LaserscanFrame
+    laser_scan: Optional[LaserscanFrame]
     twist: TwistFrame
     imu: IMUFrame
     odometry: OdometryFrame
