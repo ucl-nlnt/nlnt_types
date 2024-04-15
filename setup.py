@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='nlnt_types',
-    version='0.1.2',
+    version='0.1.3',
     description='Custom static types for NLNT codebase',
     url='https://github.com/ucl-nlnt/nlnt_types',
     author='ucl-nlnt',
