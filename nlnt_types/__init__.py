@@ -60,11 +60,9 @@ StatesList = List[Union[DataframeType]]
 
 
 class KeyframeType(TypedDict):
-    natural_language_prompt: str
-    start_timestamp_s: str
-    start_timestamp_float: float
-    end_timestamp_s: str
-    end_timestamp_float: float
+    natural_language_prompt: Optional[str]
+    start_timestamp: float
+    end_timestamp: float
     step_num: int
     states: StatesList
 
