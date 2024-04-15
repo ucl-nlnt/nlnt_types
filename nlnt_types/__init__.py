@@ -58,12 +58,26 @@ class DataframeType(TypedDict):
 StatesList = List[Union[DataframeType]]
 
 
+class KeyframeType(TypedDict):
+    natural_language_prompt: str
+    step_num: int
+    states: StatesList
+
+
+KeyframesList = List[Union[KeyframeType]]
+
+
 class DatalogType(TypedDict):
     username: str
     natural_language_prompt: str
     timestamp_s: str
     timestamp_float: float
     states: StatesList
+    distance_traveled: float
+    radians_rotated: float
+    ground_truth: Optional[FloatList]
+    simulation: Optional[int]
+    keyframes: Optional[KeyframesList]
 
 
 DatalogsList = List[Union[DatalogType]]
